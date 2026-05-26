@@ -1,0 +1,26 @@
+<script>
+
+function loginUser() {
+
+  const username =
+  document.getElementById('username').value;
+
+  const password =
+  document.getElementById('password').value;
+
+  const userData = {
+    username: username,
+    password: password
+  };
+
+  localStorage.setItem(
+    'savedUser',
+    JSON.stringify(userData)
+  );
+
+  alert('Data Saved!');
+}
+
+</script>
+
+</body>
